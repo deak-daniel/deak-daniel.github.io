@@ -1,0 +1,131 @@
+
+.main{
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+    background-color: transparent;
+    border: var(--defaultBorder);
+    border-radius: var(--BorderRadius);
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width:768px){
+    .main h1{
+        margin-top: 40%;
+        text-align: center;
+    }
+}
+
+.main h1{
+    text-align: center;
+}
+
+.flex-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    border: var(--defaultBorder);
+    border-radius: var(--BorderRadius);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    width: min(350px, 40%);
+    height: 400px;
+    display: grid;
+    grid-template-columns: 15px 40% 40% 15px;
+    grid-template-rows: 10% 40% 30% 20%;
+}
+
+@media only screen and (max-width: 768px){
+    
+.flex-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card{
+    border: var(--defaultBorder);
+    border-radius: var(--BorderRadius);
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    width: 350px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 15px 40% 40% 15px;
+    grid-template-rows: 10% 40% 30% 20%;
+}
+}
+
+.card h2{
+    /* color: black; */
+    grid-column: 2 / 4;
+    text-align: center;
+    grid-row: 1 / 1;
+}
+
+.card p{
+    margin: min(5px, 10%);
+    grid-column: 2 / 4;
+    grid-row: 3 / 3;
+    overflow-y: auto;
+}
+
+/* width */
+.card ::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.card ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.card ::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.card ::-webkit-scrollbar-thumb:hover {
+    background: darkgray;
+}
+
+.buttonFlexbox{
+    display: flex;
+    padding: 8px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+    /* GRID POSITION */
+    grid-row: 4/4;
+    grid-column: 2/4;
+}
+
+.buttonFlexbox button{
+    background-color: white;
+    border: var(--defaultBorder);
+    border-radius: var(--BorderRadius);
+    width: 100px;
+    height: 30px;
+}
+
+.buttonFlexbox button:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    transform: scale(110%, 110%);
+    transition-delay: 20ms;
+    transition-timing-function: ease-in;
+}
+
+.buttonFlexbox a{
+    width: 100px;
+    height: 30px;
+    color: black;
+}

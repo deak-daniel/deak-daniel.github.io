@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css\contact.css" />
+    <link rel="stylesheet" href="css\header.css" />
+    <link rel="stylesheet" href="css\footer.css" />
+    <link rel="stylesheet" href="css\projects.css" />
+    <link rel="stylesheet" href="css\second-header.css" />
+    <script
+      src="https://unpkg.com/htmx.org@2.0.1"
+      integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/animate-on-scroll.js"></script>
+    <title>Resume</title>
+  </head>
+
+  <body>
+    <div class="navbar"></div>
+    <div class="header">
+      <div class="innerHeader">
+        <h1>Hi, I'm Daniel! Software Engineer</h1>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+    <div class="second-header">
+      <h2>About me</h2>
+      <h3 class="h3-right">Skills</h3>
+      <h3 class="h3-left">Summary</h3>
+      <div class="flex-container-right">
+        <div class="box-right">
+          <img src="media/csharp.png" />
+        </div>
+        <div class="box-right">
+          <img src="media/css.png" />
+        </div>
+        <div class="box-right">
+          <img src="media/blazor.png" />
+        </div>
+        <div class="box-right">
+          <img src="media/flask.jpg" />
+        </div>
+        <div class="box-right">
+          <img src="media/github.png" />
+        </div>
+        <div class="box-right">
+          <img src="media/html.png" />
+        </div>
+        <div class="box-right">
+          <img src="media/javascript.png" />
+        </div>
+        <div class="box-right">
+          <img src="media/mysql.png" />
+        </div>
+        <div class="box-right">
+          <img src="media/python.png" />
+        </div>
+        <div class="box-right">
+          <img src="media/wpf.png" />
+        </div>
+      </div>
+      <div class="flex-container-left">
+        <div class="box">
+          I am a software developer who strives for understanding each problem
+          that comes his way. Therefor I am passionate about braking down each
+          task to "bite sized pieces" to understand every aspect of the current
+          challenge.
+        </div>
+      </div>
+    </div>
+
+    <div id="projects" class="main">
+      <h1>Projects</h1>
+      <div class="flex-container">
+        <div class="card">
+          <h2>Naive Bayes classifier</h2>
+          <p>
+            I implemented the naive bayes classifier from scratch, with object
+            oriented C# code. The naive bayes classifier is a probabilistic
+            model in the field of data science. It can be used to do a lot of
+            things, but mainly it is used to classify data. It is one of the
+            most used machine learning model because of it's simplicity and
+            speed. Give it a try on the link below.
+          </p>
+          <div class="buttonFlexbox">
+            <button onclick="openFirstPage()">Github</button>
+            <button>Try</button>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Text summarizer</h2>
+          <p>
+            I achieved text summarization with object oriented C# code. Therefor
+            implemented the whole model from scratch. It is not the best way to
+            summarize a document, but it gets the job done.
+          </p>
+          <div class="buttonFlexbox">
+            <button onclick="openSecondPage()">Github</button>
+            <button>Try</button>
+          </div>
+        </div>
+        <!-- <div class="card">
+          <h2>Project 3</h2>
+          <p></p>
+          <div class="buttonFlexbox">
+            <button onclick="openThirdPage()">Github</button>
+            <button>Try</button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="contactMe"></div>
+
+    <div class="footer">
+      <h2>Social links:</h2>
+      <div class="flexWrapper">
+        <a class="footer-link">Github</a>
+        <a class="footer-link">LinkedIn</a>
+      </div>
+    </div>
+  </body>
+</html>

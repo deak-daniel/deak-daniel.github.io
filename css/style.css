@@ -1,0 +1,74 @@
+/* VARIABLES */
+:root{
+    --MainBgColor:rgb(27, 38, 44);
+    --defaultBorder: 0px solid black;
+    --WhiteBorder: 2px solid rgb(187, 225, 250);
+    --SecondaryBgColor:rgb(15, 76, 117);
+    --ThirdBgColor: rgb(50, 130, 184);
+    --BorderRadius: 10px;
+    --defaultPadding: 10px;
+}
+
+/* STYLES */
+* {
+    font-family: SF;
+    font-size: 20;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: SF;
+    src: url("fonts/SFPRODISPLAYREGULAR.OTF");
+}
+
+html{
+    color: white;
+    background-repeat:no-repeat;
+    background-image: url("mainpage.jpg"); 
+    background-size: cover;
+    /* background-image: repeating-linear-gradient(45deg, black, #311D3F 100%);  */
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 60px 33% 33% 33% 60px;
+    grid-template-rows: 100% 30% 50% 20%;
+}
+
+
+a{
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    border: var(--WhiteBorder);
+    border-radius: var(--BorderRadius);
+    padding: var(--defaultPadding);
+}
+
+a:hover{
+    /* background-color: var(--SecondaryBgColor); */
+    backdrop-filter: blur(5px);
+    transition-property: backdrop-filter;
+    transition-duration: 30ms;
+}
+
+/* .container-left{
+    grid-column: 1 / 2;
+    background-color: transparent;
+    border: var(--defaultBorder);
+    padding: var(--defaultPadding);
+    border-radius: var(--BorderRadius);
+}
+
+.container-right{
+    grid-column: 3 / 4;
+    padding: var(--defaultPadding);
+    background-color: transparent;
+    border: var(--defaultBorder);
+    border-radius: var(--BorderRadius);
+} */
+
+

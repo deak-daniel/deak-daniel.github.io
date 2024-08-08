@@ -1,0 +1,21 @@
+.header{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+
+    background-color: transparent;
+    border: var(--defaultBorder);
+    border-radius: var(--BorderRadius);
+    text-align: center;
+    grid-column: 2 / 5;
+    grid-row: 1 / 1;
+    margin-bottom: 10px;
+}
+
+.innerHeader
+{
+    font-size: xx-large;
+    text-align: center;
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+}
