@@ -7,6 +7,7 @@
     flex-direction: row;
     list-style-type: none;
     position: fixed;
+    z-index:10000;
 }
 
 .navbar li a{

@@ -173,7 +173,7 @@
     }
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) and (min-width: 768px){
     .box-right{
         display: flex;
         background-color: white;
