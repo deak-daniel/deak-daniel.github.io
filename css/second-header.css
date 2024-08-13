@@ -3,6 +3,7 @@
     border: var(--defaultBorder);
     border-radius: var(--BorderRadius);
     background-color: transparent;
+    overflow-y: hidden;
     
     /* GRID */
     display: grid;
@@ -26,13 +27,13 @@
 
 .h3-left{
     grid-column: 1 / 1;
-    grid-row: 2/3;
+    grid-row: 2 / 3;
     text-align: center;
 }
 
 .h3-right{
     grid-column: 3 / 4;
-    grid-row: 2/3;
+    grid-row: 2 / 3;
     text-align: center;
 }
 

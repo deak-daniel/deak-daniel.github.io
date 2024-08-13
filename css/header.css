@@ -4,6 +4,7 @@
     grid-template-rows: 20% 80%;
 
     background-color: transparent;
+    overflow-y: hidden;
     border: var(--defaultBorder);
     border-radius: var(--BorderRadius);
     text-align: center;
