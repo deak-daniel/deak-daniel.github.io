@@ -48,7 +48,7 @@ body{
         grid-template-columns: 1px 33% 33% 33% 1px;
         grid-template-rows: 3% 70% 30% 50% 20%;
         overflow-x: hidden;
-
+        overflow-y: auto;
     }
 }
 
@@ -57,9 +57,9 @@ body{
     body{
         display: grid;
         grid-template-columns: 1px 33% 33% 33% 1px;
-        grid-template-rows: 3% 70% 30% 50% 20%;
+        grid-template-rows: 3% 70% 30% 50% 20%;     
         overflow-x: hidden;
-
+        overflow-y: auto;
     }
 }
 

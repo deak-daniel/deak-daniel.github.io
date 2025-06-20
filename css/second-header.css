@@ -3,7 +3,8 @@
     border: var(--defaultBorder);
     border-radius: var(--BorderRadius);
     background-color: transparent;
-    overflow-y: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     
     /* GRID */
     display: grid;
