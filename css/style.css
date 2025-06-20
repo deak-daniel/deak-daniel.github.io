@@ -35,6 +35,8 @@ html{
 
 body{
     display: grid;
+    overflow-x: hidden;
+    overflow-y: auto;
     grid-template-columns: 60px 33% 33% 33% 60px;
     grid-template-rows: 3% 100% 30% 50% 20%;
 }
