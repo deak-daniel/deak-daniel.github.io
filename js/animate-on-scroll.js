@@ -34,8 +34,7 @@ function AnimateRightBoxes(triggerBottom)
     }
 }
 
-window.addEventListener("scroll", AnimateBoxes);
-// AnimateBoxes();
+document.addEventListener("scroll", AnimateBoxes);
 
 
 
