@@ -35,8 +35,6 @@ html{
 
 body{
     display: grid;
-    overflow-x: hidden;
-    overflow-y: auto;
     grid-template-columns: 60px 33% 33% 33% 60px;
     grid-template-rows: 3% 100% 30% 50% 20%;
 }
@@ -47,8 +45,6 @@ body{
         display: grid;
         grid-template-columns: 1px 33% 33% 33% 1px;
         grid-template-rows: 3% 70% 30% 50% 20%;
-        overflow-x: hidden;
-        overflow-y: auto;
     }
 }
 
@@ -58,8 +54,6 @@ body{
         display: grid;
         grid-template-columns: 1px 33% 33% 33% 1px;
         grid-template-rows: 3% 70% 30% 50% 20%;     
-        overflow-x: hidden;
-        overflow-y: auto;
     }
 }
 
@@ -69,7 +63,6 @@ body{
         display: grid;
         grid-template-columns: 100px 33% 33% 33% 100px;
         grid-template-rows: 3% 70% 30% 50% 20%;
-        overflow-x: hidden;
         font-size: xx-large;
     }
 }
