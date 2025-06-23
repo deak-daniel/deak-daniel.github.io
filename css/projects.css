@@ -52,10 +52,10 @@
     background-color: transparent;
     backdrop-filter: blur(20px);
     width: min(350px, 40%);
-    height: 400px;
+    /* height: 400px; */
     display: grid;
     grid-template-columns: 15px 40% 40% 15px;
-    grid-template-rows: 10% 40% 30% 20%;
+    grid-template-rows: 10% 10% 50% 20%;
 }
 
 @media only screen and (max-width: 768px){
@@ -78,7 +78,7 @@
         height: 400px;
         display: grid;
         grid-template-columns: 15px 40% 40% 15px;
-        grid-template-rows: 10% 40% 30% 20%;
+        grid-template-rows: 10% 10% 50% 20%;
     }
 }
 
@@ -102,7 +102,7 @@
         height: 800px;
         display: grid;
         grid-template-columns: 15px 40% 40% 15px;
-        grid-template-rows: 10% 40% 30% 20%;
+        grid-template-rows: 10% 10% 50% 20%;
     }
 
     .card h2{
@@ -115,7 +115,6 @@
 }
 
 .card h2{
-    /* color: black; */
     grid-column: 2 / 4;
     text-align: center;
     grid-row: 1 / 1;
@@ -128,22 +127,18 @@
     overflow-y: auto;
 }
 
-/* width */
 .card ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Track */
 .card ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
-/* Handle */
 .card ::-webkit-scrollbar-thumb {
     background: #888;
 }
 
-/* Handle on hover */
 .card ::-webkit-scrollbar-thumb:hover {
     background: darkgray;
 }
@@ -160,15 +155,17 @@
     grid-column: 2/4;
 }
 
-.buttonFlexbox button{
+.buttonFlexbox a{
     background-color: white;
+    text-align: center;
     border: var(--defaultBorder);
     border-radius: var(--BorderRadius);
     width: 100px;
     height: 30px;
+    color: black;
 }
 
-.buttonFlexbox button:hover{
+.buttonFlexbox a:hover{
     cursor: pointer;
     background-color: whitesmoke;
     transform: scale(110%, 110%);
@@ -176,8 +173,8 @@
     transition-timing-function: ease-in;
 }
 
-.buttonFlexbox a{
+/* .buttonFlexbox a{
     width: 100px;
     height: 30px;
     color: black;
-}
+} */

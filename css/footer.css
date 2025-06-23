@@ -70,7 +70,7 @@
 
 .footer-link:hover{
     cursor: pointer;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(100px);
     transition-property: backdrop-filter;
     transition-duration: 30ms;
 }
