@@ -15,7 +15,7 @@
       integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/"
       crossorigin="anonymous"
     ></script>
-    <script src="js/animate-on-scroll.js"></script>
+    <script defer src="js/app.js"></script>
     <title>Resume</title>
   </head>
 
@@ -50,39 +50,39 @@
       <h3 class="h3-right">Skills</h3>
       <h3 class="h3-left">Summary</h3>
       <div class="flex-container-right">
-        <div class="box-right">
+        <div class="box-right hidden">
           <img src="media/csharp.png" />
         </div>
-        <div class="box-right">
+        <div class="box-right hidden">
           <img src="media/css.png" />
         </div>
-        <div class="box-right">
+        <div class="box-right hidden">
           <img src="media/rest-api.png" />
         </div>
-        <div class="box-right">
+        <div class="box-right hidden">
           <img src="media/php.png" />
         </div>
-        <div class="box-right">
+        <div class="box-right hidden">
           <img src="media/github.png" />
         </div>
-        <div class="box-right">
+        <div class="box-right hidden">
           <img src="media/html.png" />
         </div>
-        <div class="box-right">
+        <div class="box-right hidden">
           <img src="media/javascript.png" />
         </div>
-        <div class="box-right">
+        <div class="box-right hidden">
           <img src="media/mysql.png" />
         </div>
-        <div class="box-right">
+        <div class="box-right hidden">
           <img src="media/python.png" />
         </div>
-        <div class="box-right">
+        <div class="box-right hidden">
           <img src="media/wpf.png" />
         </div>
       </div>
       <div class="flex-container-left">
-        <div class="box">
+        <div class="box hidden">
           I am a software developer who strives for understanding each problem
           that comes his way. Therefor I am passionate about breaking down each
           task to "bite sized pieces" to understand every aspect of the current
@@ -94,11 +94,12 @@
     <div id="projects" class="main">
       <h1>Projects</h1>
       <div class="flex-container">
-        <div class="card">
+        <div class="card hidden">
           <h2>Crosshair Selector</h2>
           <p>
             A C# WPF application, that aims to create a free application for
-            gamers, to use instead as a customizable crosshair.
+            gamers, to use as a fully customizable crosshair, with 5 different
+            shapes.
           </p>
           <div class="buttonFlexbox">
             <a
@@ -108,7 +109,7 @@
             >
           </div>
         </div>
-        <div class="card">
+        <div class="card hidden">
           <h2>Text summarizer</h2>
           <p>
             I achieved text summarization with object oriented C# code. Therefor
@@ -123,7 +124,7 @@
             >
           </div>
         </div>
-        <div class="card">
+        <div class="card hidden">
           <h2>Web</h2>
           <p>
             The name may not say much, but this project is a full administration
@@ -144,18 +145,17 @@
     <div class="footer">
       <h2>Social links:</h2>
       <div class="flexWrapper">
-        <a
-          class="footer-link"
-          href="https://github.com/deak-daniel"
-          target="_blank"
-          >Github</a
-        >
-        <a
-          class="footer-link"
-          href="https://www.linkedin.com/in/dani-de%C3%A1k-aab341278/"
-          target="_blank"
-          >LinkedIn</a
-        >
+        <div class="footer-link">
+          <a href="https://github.com/deak-daniel" target="_blank">Github</a>
+        </div>
+
+        <div class="footer-link">
+          <a
+            href="https://www.linkedin.com/in/dani-de%C3%A1k-aab341278/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </div>
       </div>
     </div>
   </body>

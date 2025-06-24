@@ -49,18 +49,17 @@
 
 .flexWrapper{
     grid-column: 1 / 5;
-    grid-row: 2/2;
-}
-
-.footer-link{
-    margin: 5px;
-    background-color: transparent;
-    grid-column: 1 / 2;
-    grid-template-rows: 1 / 2;
+    grid-row: 2 / 2;
+    display: flex;
+    justify-content: left;
 }
 
 .footer-link a{
+    margin: 5px;
+    grid-column: 1 / 2;
+    grid-template-rows: 1 / 2;
     color: white;
+    backdrop-filter: blur(20px);
     background-color: transparent;
     text-decoration: none;
     border: var(--WhiteBorder);
@@ -68,9 +67,9 @@
     padding: var(--defaultPadding);
 }
 
-.footer-link:hover{
+.footer-link a:hover{
     cursor: pointer;
-    backdrop-filter: blur(100px);
-    transition-property: backdrop-filter;
-    transition-duration: 30ms;
+    backdrop-filter: blur(20px);
+    transform: scale(1.1, 1.1);
+    transition: all 0.2s;
 }

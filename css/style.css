@@ -2,7 +2,7 @@
 :root{
     --MainBgColor:rgb(27, 38, 44);
     --defaultBorder: 0px solid black;
-    --WhiteBorder: 2px solid rgb(187, 225, 250);
+    --WhiteBorder: 2px solid transparent;
     --SecondaryBgColor:rgb(15, 76, 117);
     --ThirdBgColor: rgb(50, 130, 184);
     --BorderRadius: 10px;
@@ -77,8 +77,12 @@ a{
 }
 
 a:hover{
-    /* background-color: var(--SecondaryBgColor); */
     backdrop-filter: blur(5px);
     transition-property: backdrop-filter;
     transition-duration: 30ms;
+}
+
+.hidden{
+    opacity: 0;
+    transform: translateY(100%);
 }

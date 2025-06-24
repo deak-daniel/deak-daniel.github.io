@@ -21,3 +21,12 @@
     grid-column: 1 / 1;
     grid-row: 2 / 3;
 }
+
+.innerHeader a{
+    background-color: darkgray;
+}
+
+.innerHeader a:hover{
+    background-color: whitesmoke;
+    color: black;
+}
