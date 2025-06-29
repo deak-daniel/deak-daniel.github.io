@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css\style.css" />
     <link rel="stylesheet" href="css\navbar.css" />
-    <link rel="stylesheet" href="css\contact.css" />
+    <link rel="stylesheet" href="css\main.css" />
     <link rel="stylesheet" href="css\header.css" />
     <link rel="stylesheet" href="css\footer.css" />
     <link rel="stylesheet" href="css\projects.css" />
-    <link rel="stylesheet" href="css\second-header.css" />
+    <link rel="stylesheet" href="css\about.css" />
+    <link rel="stylesheet" href="css\parallax.css" />
     <script
       src="https://unpkg.com/htmx.org@2.0.1"
       integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/"
@@ -20,141 +21,214 @@
   </head>
 
   <body>
-    <nav class="navbar">
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      <li>
-        <a href="#about">About</a>
-      </li>
-      <li>
-        <a href="mailto:deakdani04@gmail.com">Contact</a>
-      </li>
-      <li>
-        <a
-          href="media/deakdanielresume.pdf"
-          target="_blank"
-          download="deak-daniel-resume"
-          >Resume</a
-        >
-      </li>
-    </nav>
-    <div class="header">
-      <div class="innerHeader">
+    <header>
+      <nav class="navbar">
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="mailto:deakdani04@gmail.com">Contact</a>
+        </li>
+        <li>
+          <a
+            href="media/deakdanielresume.pdf"
+            target="_blank"
+            download="deak-daniel-resume"
+            >Resume</a
+          >
+        </li>
+      </nav>
+    </header>
+
+    <section id="parallax">
+      <img
+        data-speed="100"
+        src="./media/parallax/layer1.png"
+        alt=""
+        id="layer1"
+      />
+      <img
+        class="parallax"
+        data-speed="-10"
+        src="./media/parallax/layer2.png"
+        alt=""
+        id="layer2"
+      />
+      <div id="titleText" class="parallax" data-speed="-80">
         <h1>Hi, I'm Daniel! Software Engineer</h1>
         <a href="#projects">Projects</a>
       </div>
-    </div>
-    <div class="second-header" id="about">
-      <h2>About me</h2>
-      <h3 class="h3-right">Skills</h3>
-      <h3 class="h3-left">Summary</h3>
-      <div class="flex-container-right">
-        <div class="box-right hidden">
-          <img src="media/csharp.png" />
+      <img
+        class="parallax"
+        data-speed="-15"
+        src="./media/parallax/layer3.png"
+        alt=""
+        id="layer3"
+      />
+      <img
+        class="parallax"
+        data-speed="-20"
+        src="./media/parallax/layer4.png"
+        alt=""
+        id="layer4"
+      />
+      <img
+        class="parallax"
+        data-speed="-28"
+        src="./media/parallax/layer5.png"
+        alt=""
+        id="layer5"
+      />
+      <img
+        class="parallax"
+        data-speed="-35"
+        src="./media/parallax/layer6.png"
+        alt=""
+        id="layer6"
+      />
+      <img
+        class="parallax"
+        data-speed="-45"
+        src="./media/parallax/layer7.png"
+        alt=""
+        id="layer7"
+      />
+      <img
+        class="parallax"
+        data-speed="-66"
+        src="./media/parallax/layer8.png"
+        alt=""
+        id="layer8"
+      />
+    </section>
+    <div id="main">
+      <div class="about">
+        <div class="about-header">
+          <h2>About me</h2>
         </div>
-        <div class="box-right hidden">
-          <img src="media/css.png" />
-        </div>
-        <div class="box-right hidden">
-          <img src="media/rest-api.png" />
-        </div>
-        <div class="box-right hidden">
-          <img src="media/php.png" />
-        </div>
-        <div class="box-right hidden">
-          <img src="media/github.png" />
-        </div>
-        <div class="box-right hidden">
-          <img src="media/html.png" />
-        </div>
-        <div class="box-right hidden">
-          <img src="media/javascript.png" />
-        </div>
-        <div class="box-right hidden">
-          <img src="media/mysql.png" />
-        </div>
-        <div class="box-right hidden">
-          <img src="media/python.png" />
-        </div>
-        <div class="box-right hidden">
-          <img src="media/wpf.png" />
-        </div>
-      </div>
-      <div class="flex-container-left">
-        <div class="box hidden">
-          I am a software developer who strives for understanding each problem
-          that comes his way. Therefor I am passionate about breaking down each
-          task to "bite sized pieces" to understand every aspect of the current
-          challenge.
-        </div>
-      </div>
-    </div>
+        <div class="about-me" id="about">
+          <div class="about-wrapper">
+            <div class="flex-container-right-header">
+              <h3>Summary</h3>
+            </div>
+            <div class="flex-container-right">
+              <div class="box-right hidden">
+                <img src="media/csharp.png" />
+              </div>
+              <div class="box-right hidden">
+                <img src="media/css.png" />
+              </div>
+              <div class="box-right hidden">
+                <img src="media/rest-api.png" />
+              </div>
+              <div class="box-right hidden">
+                <img src="media/php.png" />
+              </div>
+              <div class="box-right hidden">
+                <img src="media/github.png" />
+              </div>
+              <div class="box-right hidden">
+                <img src="media/html.png" />
+              </div>
+              <div class="box-right hidden">
+                <img src="media/javascript.png" />
+              </div>
+              <div class="box-right hidden">
+                <img src="media/mysql.png" />
+              </div>
+              <div class="box-right hidden">
+                <img src="media/python.png" />
+              </div>
+              <div class="box-right hidden">
+                <img src="media/wpf.png" />
+              </div>
+            </div>
+          </div>
+          <div class="about-wrapper">
+            <div class="flex-container-left-header">
+              <h3>Summary</h3>
+            </div>
 
-    <div id="projects" class="main">
-      <h1>Projects</h1>
-      <div class="flex-container">
-        <div class="card hidden">
-          <h2>Crosshair Selector</h2>
-          <p>
-            A C# WPF application, that aims to create a free application for
-            gamers, to use as a fully customizable crosshair, with 5 different
-            shapes.
-          </p>
-          <div class="buttonFlexbox">
+            <div class="flex-container-left">
+              <div class="box hidden">
+                I am a software developer who strives for understanding each
+                problem that comes his way. Therefor I am passionate about
+                breaking down each task to "bite sized pieces" to understand
+                every aspect of the current challenge.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="projects">
+        <h1>Projects</h1>
+        <div class="flex-container">
+          <div class="card hidden">
+            <h2>Crosshair Selector</h2>
+            <p>
+              A C# WPF application, that aims to create a free application for
+              gamers, to use as a fully customizable crosshair, with 5 different
+              shapes.
+            </p>
+            <div class="buttonFlexbox">
+              <a
+                href="https://github.com/deak-daniel/CrosshairSelector"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="card hidden">
+            <h2>Text summarizer</h2>
+            <p>
+              I achieved text summarization with object oriented C# code.
+              Therefor implemented the whole model from scratch. It is not the
+              best way to summarize a document, but it gets the job done.
+            </p>
+            <div class="buttonFlexbox">
+              <a
+                href="https://github.com/deak-daniel/TextSummarizer_TFIDF"
+                target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+          <div class="card hidden">
+            <h2>Web</h2>
+            <p>
+              The name may not say much, but this project is a full
+              administration system, aimed to help college students in keeping
+              track of their subjects and exams.
+            </p>
+            <div class="buttonFlexbox">
+              <a href="https://github.com/deak-daniel/web" target="_blank"
+                >Github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-header">
+          <h2>Social links:</h2>
+        </div>
+
+        <div class="footer-content">
+          <div class="footer-link">
+            <a href="https://github.com/deak-daniel" target="_blank">Github</a>
+          </div>
+
+          <div class="footer-link">
             <a
-              href="https://github.com/deak-daniel/CrosshairSelector"
+              href="https://www.linkedin.com/in/dani-de%C3%A1k-aab341278/"
               target="_blank"
-              >Github</a
+              >LinkedIn</a
             >
           </div>
-        </div>
-        <div class="card hidden">
-          <h2>Text summarizer</h2>
-          <p>
-            I achieved text summarization with object oriented C# code. Therefor
-            implemented the whole model from scratch. It is not the best way to
-            summarize a document, but it gets the job done.
-          </p>
-          <div class="buttonFlexbox">
-            <a
-              href="https://github.com/deak-daniel/TextSummarizer_TFIDF"
-              target="_blank"
-              >Github</a
-            >
-          </div>
-        </div>
-        <div class="card hidden">
-          <h2>Web</h2>
-          <p>
-            The name may not say much, but this project is a full administration
-            system, aimed to help college students in keeping track of their
-            subjects and exams.
-          </p>
-          <div class="buttonFlexbox">
-            <a href="https://github.com/deak-daniel/web" target="_blank"
-              >Github</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="contactMe"></div>
-
-    <div class="footer">
-      <h2>Social links:</h2>
-      <div class="flexWrapper">
-        <div class="footer-link">
-          <a href="https://github.com/deak-daniel" target="_blank">Github</a>
-        </div>
-
-        <div class="footer-link">
-          <a
-            href="https://www.linkedin.com/in/dani-de%C3%A1k-aab341278/"
-            target="_blank"
-            >LinkedIn</a
-          >
         </div>
       </div>
     </div>
