@@ -1,5 +1,6 @@
 .navbar{
     display: flex;
+    text-shadow: 1px 1px 1px black;
     backdrop-filter: blur(20px);
     background-color: transparent;
     flex-direction: row;
