@@ -1,0 +1,9 @@
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    position: relative;
+    margin:auto;
+    background: #27323C;
+}

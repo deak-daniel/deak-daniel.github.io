@@ -1,0 +1,65 @@
+.about-me{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    border: var(--defaultBorder);
+    border-radius: var(--BorderRadius);
+    background-color: transparent;
+    height: 50%;
+}
+
+.about-wrapper{
+    width: max(50%, 100px);
+    margin: 10px;
+}
+
+.about-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-header{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container{
+    display: flex;
+    padding: 5px;
+    border-radius: var(--BorderRadius);
+    backdrop-filter: blur(20px);
+}
+
+
+.box{
+    background-color: transparent;
+    border: var(--defaultBorder);
+    border-radius: var(--BorderRadius);
+    text-align: center;
+    transition: all 1s;
+}
+
+.box-right{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: center;
+    background-color: white;
+    border: var(--defaultBorder);
+    border-radius: var(--BorderRadius);
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
+    text-align: center;
+    transition: all 1s;
+}
+
+.box-right img{
+    height: 10vh;
+    width: auto;
+}
