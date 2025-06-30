@@ -29,10 +29,10 @@ html{
     background-color: #27323C;
     color: white;
     background-repeat: no-repeat;
-    background-size:contain;
-    background-attachment:fixed;
+    background-size: contain;
+    background-attachment: fixed;
     margin: auto;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 body{
