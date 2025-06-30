@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css\navbar.css" />
     <link rel="stylesheet" href="css\main.css" />
     <link rel="stylesheet" href="css\header.css" />
-    <link rel="stylesheet" href="css\footer.css" />
+    <link rel="stylesheet" href="css\sidebar.css" />
     <link rel="stylesheet" href="css\projects.css" />
     <link rel="stylesheet" href="css\about.css" />
     <link rel="stylesheet" href="css\parallax.css" />
@@ -105,8 +105,21 @@
       />
     </section>
     <main id="main">
-      <section class="about">
-        <div class="about-me" id="about">
+      <aside>
+        <div class="sidebar-link">
+          <a href="https://github.com/deak-daniel" target="_blank"
+            ><img src="/media/github.svg" alt="" srcset=""
+          /></a>
+        </div>
+
+        <div class="sidebar-link">
+          <a href="https://www.linkedin.com/in/danieldeakakos/" target="_blank"
+            ><img src="/media/linkedin.svg" alt="" srcset=""
+          /></a>
+        </div>
+      </aside>
+      <section id="about">
+        <div id="about">
           <div class="about-wrapper">
             <div class="flex-container-header">
               <h3>Skills</h3>
@@ -160,7 +173,7 @@
 
       <section id="projects">
         <h1>Projects</h1>
-        <div class="flex-container">
+        <div class="flex-container-projects">
           <div class="card hidden">
             <h2>Crosshair Selector</h2>
             <p>
@@ -169,11 +182,10 @@
               shapes.
             </p>
             <div class="buttonFlexbox">
-              <a
+              <button
                 href="https://github.com/deak-daniel/CrosshairSelector"
                 target="_blank"
-                >Github</a
-              >
+                >Github</button>
             </div>
           </div>
           <div class="card hidden">
@@ -184,10 +196,10 @@
               best way to summarize a document, but it gets the job done.
             </p>
             <div class="buttonFlexbox">
-              <a
+              <button
                 href="https://github.com/deak-daniel/TextSummarizer_TFIDF"
                 target="_blank"
-                >Github</a
+                >Github</button
               >
             </div>
           </div>
@@ -199,32 +211,13 @@
               track of their subjects and exams.
             </p>
             <div class="buttonFlexbox">
-              <a href="https://github.com/deak-daniel/web" target="_blank"
-                >Github</a
+              <button href="https://github.com/deak-daniel/web" target="_blank"
+                >Github</button
               >
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-      <div id="footer-header">
-        <h2>Social links:</h2>
-      </div>
-
-      <div id="footer-content">
-        <div class="footer-link">
-          <a href="https://github.com/deak-daniel" target="_blank"
-            ><img src="/media/github.svg" alt="" srcset=""
-          /></a>
-        </div>
-
-        <div class="footer-link">
-          <a href="https://www.linkedin.com/in/danieldeakakos/" target="_blank"
-            ><img src="/media/linkedin.svg" alt="" srcset=""
-          /></a>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

@@ -1,5 +1,6 @@
 
 #projects{
+    grid-area: main2;
     display: flex;
     flex-direction: column;
     background-color: transparent;
@@ -12,13 +13,14 @@
     text-align: center;
 }
 
-.flex-container{
+.flex-container-projects{
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    row-gap: 20vh;
+    align-items: center;
 }
 
 .card{
@@ -27,7 +29,6 @@
     border: var(--defaultBorder);
     border-radius: var(--BorderRadius);
     background-color: transparent;
-    backdrop-filter: blur(20px);
     width: min(350px, 40%);
     transition: all 1s;
 }
@@ -39,10 +40,6 @@
 .card p{
     margin: min(5px, 10%);
     overflow-y: auto;
-}
-
-.card.show{
-    opacity: 1;
 }
 
 .card ::-webkit-scrollbar {
@@ -63,23 +60,32 @@
 
 .buttonFlexbox{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.buttonFlexbox a{
-    background-color: darkgray;
-    text-align: center;
-    border: var(--defaultBorder);
-    border-radius: var(--BorderRadius);
-    width: 100px;
-    height: 30px;
+.buttonFlexbox button{
+    background-color: #161a20;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 1000px;
     color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.buttonFlexbox a:hover{
-    cursor: pointer;
-    color: black;
-    background-color: whitesmoke;
+.buttonFlexbox button::after{
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+    z-index: -1;
+}
+
+.buttonFlexbox button:hover{
+    z-index: 0;
+    box-shadow: 40px 0 100px #008cff, -40 0 100px #e100ff;
 }

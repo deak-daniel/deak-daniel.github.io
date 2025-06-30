@@ -1,15 +1,14 @@
-.about-me{
+#about{
+    grid-area: main;
     margin-top: 10vh;
     display: flex;
     flex-direction: column-reverse;
-    flex-wrap: nowrap;
     font-size: larger;
     align-items: center;
     justify-content: center;
     border: var(--defaultBorder);
     border-radius: var(--BorderRadius);
     background-color: transparent;
-    height: 50%;
 }
 
 .about-wrapper{
@@ -30,9 +29,9 @@
 
 .flex-container{
     display: flex;
+    flex-wrap: wrap;
     padding: 5px;
-    border-radius: var(--BorderRadius);
-    backdrop-filter: blur(20px);
+
 }
 
 

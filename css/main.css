@@ -1,9 +1,13 @@
 main{
     position: relative;
     display: flex;
-    flex-direction: column;
+
+    grid-template-columns: min(50px, 10%) auto;
+    grid-template-areas: 
+    "sidebar main"
+    "sidebar main2";
     z-index: 10;
-    position: relative;
-    margin:auto;
+    flex-direction: column;
+    margin: auto;
     background: #27323C;
 }
