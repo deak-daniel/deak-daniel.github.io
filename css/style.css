@@ -38,6 +38,7 @@ html{
 body{
     position: relative;
     overflow-x:hidden;
+    background-color: #27323C;
 }
 
 .show{
@@ -55,7 +56,7 @@ a{
 }
 
 a:hover{
-    background-color: black;
+    background-color: #27323C;
 }
 
 .hidden{

@@ -1,3 +1,8 @@
+.about{
+
+    margin-top: 40px;
+}
+
 .about-me{
     display: flex;
     flex-direction: row-reverse;
@@ -7,7 +12,7 @@
     border: var(--defaultBorder);
     border-radius: var(--BorderRadius);
     background-color: transparent;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     height: 50%;
 }
 
