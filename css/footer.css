@@ -1,12 +1,36 @@
 
-.footer{
+footer{
     display: flex;
     flex-direction: column;
     background-color: transparent;
     border-radius: var(--BorderRadius);
 }
 
-.footer-content{
+.footer-link{
+    margin-left: 5px;
+}
+
+.footer-link a{
+    padding: unset;
+    border: unset;
+    margin: unset;
+    display: block;
+    width: auto;
+    height: 5vh;
+}
+
+.footer-link img{
+    width: auto;
+    height: 5vh;
+    border-radius: var(--BorderRadius);
+    background-color: beige;
+}
+
+.footer-link img:hover{
+    background-color: white;
+}
+
+#footer-content{
     margin: 10px;
     display: flex;
     justify-content: left;
