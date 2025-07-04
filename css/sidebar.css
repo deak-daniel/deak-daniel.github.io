@@ -10,6 +10,7 @@ aside{
 
 .sidebar-link{
     margin-left: 5px;
+    position: relative;
 }
 
 .sidebar-link a{
